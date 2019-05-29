@@ -1,0 +1,43 @@
+{
+  "name": "yarrumevets",
+  "version": "1.0.0",
+  "description": "Some kind of CMS type of thing.",
+  "main": "index.js",
+  "scripts": {
+    "start_foo": "webpack --mode development",
+    "start_open": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.413.0",
+    "exif-parser": "^0.1.12",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.3",
+    "gm": "^1.23.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.13",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "author": "Steve Murray",
+  "license": "ISC"
+}

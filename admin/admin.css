@@ -1,0 +1,87 @@
+body {
+  font-family: Verdana;
+  text-align: center;
+}
+
+#foldername {
+  font-size: 18px;
+  border: none;
+  height: 50px;
+  padding-left: 10px;
+}
+
+#foldername-wrapper {
+  width: 500px;
+  padding: 10px;
+  background: #ccddff;
+  border: 1px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+#foldername-wrapper label {
+  margin-right: 20px;
+}
+
+h1 {
+  color: gray;
+}
+
+button,
+#uploadfile-label {
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  border: 1px solid black;
+  background: #ccddff;
+  margin: 10px;
+}
+
+#uploadfile-label {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#uploadfile-label-wrapper {
+  margin: 10px;
+  background: red;
+  text-align: center;
+  display: inline-table; /* has least affect on the table-cell element. */
+}
+
+#uploadfile {
+  display: none;
+}
+
+#url-preview {
+  font-size: 12px;
+  background-color: gray;
+  padding: 5px 0;
+}
+
+#url-preview #url-bucket {
+  color: blue;
+  font-weight: bold;
+}
+
+#url-preview #url-folder {
+  color: red;
+}
+
+#url-preview #url-filename {
+  color: greenyellow;
+}
+
+#postcaption,
+#imagecaption {
+  width: 80%;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  border: 0;
+  background: #ccddff;
+  margin: 20px auto;
+}
