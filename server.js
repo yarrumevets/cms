@@ -88,6 +88,34 @@ app.get("/posts", function(req, res) {
     });
 });
 
+////////////
+
+// a simple endpoint to send sending a file to a server.
+
+app.post("/post-test", function(req, res) {
+  // console.log("post-test - req.buffer: ", req.buffer);
+  // console.log("req: ", req);
+
+  console.log("getting data stream...");
+
+  let downloaded = 0;
+
+  req.on("data", chunk => {
+    downloaded += chunk.length;
+    console.log("downloaded: ", downloaded);
+  });
+
+  req.on("aborted", () => {
+    console.log("A B O R T E D");
+  });
+
+  req.on("end", () => {
+    res.send("No errors...");
+  });
+});
+
+////////////
+
 app.post("/post", function(req, res) {
   const file = req.files.file;
 

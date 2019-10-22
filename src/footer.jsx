@@ -3,7 +3,11 @@ import style from "./footer.css";
 
 class Footer extends React.Component {
   render() {
-    return <p>yarrumevets®</p>;
+    return (
+      <p>
+        yarrumevets.com® <a href={"/cms/adm/admin.html"}>+</a>
+      </p>
+    );
   }
 }
 
