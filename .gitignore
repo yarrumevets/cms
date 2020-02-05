@@ -2,3 +2,4 @@
 secret.config.js
 node_modules/
 dist/
+*.code-workspace
